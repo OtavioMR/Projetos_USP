@@ -10,7 +10,7 @@ def criar_arquivo():
     with open("financeiro.log", "w") as arquivo:
         arquivo.write(conteudo_do_arquivo)
 
-
+  
 def calcular_saldo():
     saldo = 0
     with open("financeiro.log") as arquivo:
@@ -19,7 +19,7 @@ def calcular_saldo():
             if linha:
                 valor = int(linha.split()[0])
                 saldo += valor
-    exibicao_do_financeiro = print(f"O saldo financeiro da empresa é de: {saldo}\n")
+    exibicao_do_financeiro = print(f"\nO saldo financeiro da empresa e de: {saldo}\n")
     return exibicao_do_financeiro
 
 def nova_linha():
